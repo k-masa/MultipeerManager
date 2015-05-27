@@ -1,0 +1,3 @@
+# MultipeerManager
+
+Multipeer connectivityをつかったかんたんなサンプルアプリ
