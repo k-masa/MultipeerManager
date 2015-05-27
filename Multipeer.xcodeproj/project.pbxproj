@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C656FC9A1B15C726007B9D11 /* MultipeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C656FC991B15C726007B9D11 /* MultipeerManager.swift */; };
+		C656FC9C1B15D1F5007B9D11 /* ReceiveDataTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C656FC9B1B15D1F5007B9D11 /* ReceiveDataTableView.swift */; };
+		C656FCA31B15D2CA007B9D11 /* ReceiveDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C656FCA11B15D2CA007B9D11 /* ReceiveDataTableViewCell.swift */; };
+		C656FCA41B15D2CA007B9D11 /* ReceiveDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C656FCA21B15D2CA007B9D11 /* ReceiveDataTableViewCell.xib */; };
+		C656FCA61B15D9B0007B9D11 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C656FCA51B15D9B0007B9D11 /* Message.swift */; };
 		C68673FF1AFD8C0600A71FFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68673FE1AFD8C0600A71FFA /* AppDelegate.swift */; };
 		C68674011AFD8C0600A71FFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68674001AFD8C0600A71FFA /* ViewController.swift */; };
 		C68674041AFD8C0600A71FFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68674021AFD8C0600A71FFA /* Main.storyboard */; };
 		C68674061AFD8C0600A71FFA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68674051AFD8C0600A71FFA /* Images.xcassets */; };
 		C68674091AFD8C0600A71FFA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C68674071AFD8C0600A71FFA /* LaunchScreen.xib */; };
 		C68674151AFD8C0600A71FFA /* MultipeerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68674141AFD8C0600A71FFA /* MultipeerTests.swift */; };
+		C686741F1AFD8C4900A71FFA /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C686741E1AFD8C4900A71FFA /* MultipeerConnectivity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C656FC991B15C726007B9D11 /* MultipeerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultipeerManager.swift; path = Classes/MultipeerManager.swift; sourceTree = "<group>"; };
+		C656FC9B1B15D1F5007B9D11 /* ReceiveDataTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiveDataTableView.swift; sourceTree = "<group>"; };
+		C656FCA11B15D2CA007B9D11 /* ReceiveDataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiveDataTableViewCell.swift; sourceTree = "<group>"; };
+		C656FCA21B15D2CA007B9D11 /* ReceiveDataTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReceiveDataTableViewCell.xib; sourceTree = "<group>"; };
+		C656FCA51B15D9B0007B9D11 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		C68673F91AFD8C0600A71FFA /* Multipeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multipeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68673FD1AFD8C0600A71FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C68673FE1AFD8C0600A71FFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +47,7 @@
 		C686740E1AFD8C0600A71FFA /* MultipeerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipeerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68674131AFD8C0600A71FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C68674141AFD8C0600A71FFA /* MultipeerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerTests.swift; sourceTree = "<group>"; };
+		C686741E1AFD8C4900A71FFA /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C686741F1AFD8C4900A71FFA /* MultipeerConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +72,7 @@
 		C68673F01AFD8C0600A71FFA = {
 			isa = PBXGroup;
 			children = (
+				C686741E1AFD8C4900A71FFA /* MultipeerConnectivity.framework */,
 				C68673FB1AFD8C0600A71FFA /* Multipeer */,
 				C68674111AFD8C0600A71FFA /* MultipeerTests */,
 				C68673FA1AFD8C0600A71FFA /* Products */,
@@ -79,6 +93,11 @@
 			children = (
 				C68673FE1AFD8C0600A71FFA /* AppDelegate.swift */,
 				C68674001AFD8C0600A71FFA /* ViewController.swift */,
+				C656FC991B15C726007B9D11 /* MultipeerManager.swift */,
+				C656FC9B1B15D1F5007B9D11 /* ReceiveDataTableView.swift */,
+				C656FCA11B15D2CA007B9D11 /* ReceiveDataTableViewCell.swift */,
+				C656FCA21B15D2CA007B9D11 /* ReceiveDataTableViewCell.xib */,
+				C656FCA51B15D9B0007B9D11 /* Message.swift */,
 				C68674021AFD8C0600A71FFA /* Main.storyboard */,
 				C68674051AFD8C0600A71FFA /* Images.xcassets */,
 				C68674071AFD8C0600A71FFA /* LaunchScreen.xib */,
@@ -193,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C68674041AFD8C0600A71FFA /* Main.storyboard in Resources */,
+				C656FCA41B15D2CA007B9D11 /* ReceiveDataTableViewCell.xib in Resources */,
 				C68674091AFD8C0600A71FFA /* LaunchScreen.xib in Resources */,
 				C68674061AFD8C0600A71FFA /* Images.xcassets in Resources */,
 			);
@@ -214,6 +234,10 @@
 			files = (
 				C68674011AFD8C0600A71FFA /* ViewController.swift in Sources */,
 				C68673FF1AFD8C0600A71FFA /* AppDelegate.swift in Sources */,
+				C656FC9C1B15D1F5007B9D11 /* ReceiveDataTableView.swift in Sources */,
+				C656FCA61B15D9B0007B9D11 /* Message.swift in Sources */,
+				C656FCA31B15D2CA007B9D11 /* ReceiveDataTableViewCell.swift in Sources */,
+				C656FC9A1B15C726007B9D11 /* MultipeerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Multipeer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -349,6 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Multipeer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -407,6 +433,7 @@
 				C686741A1AFD8C0600A71FFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C686741B1AFD8C0600A71FFA /* Build configuration list for PBXNativeTarget "MultipeerTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +442,7 @@
 				C686741D1AFD8C0600A71FFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
